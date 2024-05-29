@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/74820f7c4c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" alt="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Henri</span><br> Siyapdje from USA</h1>
+                </div>    
+            </div>
+       </div>
+    <!--------------------About---------->
+       <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/background.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a software engineer with a strong foundation in HTML, CSS, and JavaScript.
+                        For the last four years, i have been focusing on database management, especially PostgreSQL Database.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/IOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>Software Engineer at Laperle</li>
+                                <li><span>2024 - Current</span><br>Sofware Engineer Training at Per Scholas</li>
+                                <li><span>2021 - 2023 </span><br>PostgreSQL Database Administrator at Acess Global Services Inc.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>Software Engineering At Per Scholas</li>
+                                <li><span>2022</span><br>AWS Solutions Architect - Associate</li>
+                                <li><span>2021</span><br>PostgreSQL Database Administrator</li>
+                                <li><span>2009</span><br>Bs in Computer Sciences</li>     
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------------------Services----------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-End Development</h2>
+                        <P><span>HTML</span>: Structuring the content of the web pages.<br>
+                        <span>CSS</span>: Styling the content to make it visually appealing.<br>
+                        <span>JavaScript</span>: Adding interactivity and dynamic behavior to the website.<br>
+                        <span>React</span>: creating dynamic, responsive, and high-performance user interfaces that offer an exceptional user experience.</P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                    <i class="fa-sharp fa-solid fa-server"></i>
+                        <h2>Back-End Development</h2>
+                        <P><span>MongoDB</span>: Design and manage your database with MongoDB, ensuring flexible and scalable data storage solutions.<br>
+                            <span>Express</span>: Develop server-side logic with Express.js to handle your application's routing, middleware, and APIs.<br>
+                            <span>React</span>: Adding interactivity and dynamic behavior to the website.<br>
+                            <span>Node.js</span>: Utilize Node.js for building fast and scalable server-side applications with non-blocking, event-driven architecture.
+                        </P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Postgres Database</h2>
+                        <P><span></span> Database Design and Modeling.<br>
+                            <span></span> Database Development and Administration.<br>
+                            <span></span>Performance Tuning and Optimization.<br>
+                            <span></span>High Availability and Disaster Recovery.<br>
+                            <span></span>Security and Compliance.<br>Migration and Upgrades
+                        </P>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-aws"></i>
+                        <h2>Aws Services</h2>
+                        <P><span>Support</span>: Providing ongoing support, monitoring, and optimization to ensure your PostgreSQL databases on AWS run smoothly and efficiently.<br><span>EC2</span>: extensive experience in designing, deploying, and managing PostgreSQL databases on EC2.<br>
+                            <span>RDS</span>: Designing PostgreSQL database architectures on Amazon Relational Database Service (RDS) for easy deployment,
+                            scalability, and management.<br><span>Aurora</span>:Assisting with database migrations to Amazon Aurora PostgreSQL, including schema conversion and data replication from
+                            on-premises databases or other AWS services.
+                        </P>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------portfolio--------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Over 1,000 Design</h3>
+                            <p>that cater to various industries and personal preferences, ensuring optimal usability on desktops, tablets, and
+                            smartphones.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Responsive Website</h3>
+                            <p>Enjoy a seamless experience on any device, with our responsive design that adapts to desktops, tablets, and smartphones.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
