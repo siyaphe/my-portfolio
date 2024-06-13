@@ -15,13 +15,15 @@
             <div class="container">
                 <nav>
                     <img src="images/logo.png" alt="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Software Engineer</p>
@@ -34,12 +36,12 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/background.png" >
+                        <img src="images/bg.png" >
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>I'm a software engineer with a strong foundation in HTML, CSS, and JavaScript.
-                        For the last four years, i have been focusing on database management, especially PostgreSQL Database.
+                        For the last 10 years, I have been focusing on database management, especially PostgreSQL Database.
                         </p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -56,15 +58,17 @@
                         <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>2024 - Current</span><br>Software Engineer at Laperle</li>
-                                <li><span>2024 - Current</span><br>Sofware Engineer Training at Per Scholas</li>
+                                <li><span>2024 - Current</span><br>Software Engineer Training at Per Scholas</li>
                                 <li><span>2021 - 2023 </span><br>PostgreSQL Database Administrator at Acess Global Services Inc.</li>
+                                <li><span>2017 - 2021 </span><br>PostgreSQL Database Administrator at Bank of America.</li>
+                                <li><span>2011 - 2017 </span><br>PostgreSQL/Oracle Database Administrator at CVS.</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
                                 <li><span>2024</span><br>Software Engineering At Per Scholas</li>
                                 <li><span>2022</span><br>AWS Solutions Architect - Associate</li>
-                                <li><span>2021</span><br>PostgreSQL Database Administrator</li>
+                                <li><span>2021</span><br>EDB-13 Associate Certification</li>
                                 <li><span>2009</span><br>Bs in Computer Sciences</li>     
                             </ul>
                         </div>    
@@ -151,9 +155,44 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="btn" >See more</a>
 
             </div>
         </div>
+    <!-----------------------contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>software24.dev@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+1(412) 540-6587</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Henri Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 Henri. Laperle</p>
+
+        </div>
+    </div>
+
+
         <script src="app.js" async defer></script>
     </body>
 </html>
